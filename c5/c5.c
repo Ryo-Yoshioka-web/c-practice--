@@ -286,11 +286,6 @@
 //}
 
 
-
-
-
-
-
 //13
 //int main() {
 //	int i;
@@ -305,17 +300,94 @@
 //}
 
 //13
+//int main() {
+//	int i;
+//	int sum = 0;
+//	while (sum < 100)
+//	{
+//		scanf_s("%d", &i);
+//		sum = +i;
+//	}
+//}
+
+//14
+//int main() {
+//	int count;
+//	int	s = 0;
+//	int b = 0;
+//	while (s < 3 && b < 4)
+//	{
+//		printf("ストライク=1 or ボール=2 ？");
+//		scanf_s("%d", &count);
+//		if (count == 1)
+//		{
+//			s++;
+//		}
+//		else if (count == 2)
+//		{
+//			b++;
+//		}
+//	}
+//	printf("%dボール,%dストライク", b, s);
+//}
+
+//15 
+//int main() {
+//	int count;
+//	int	s = 0;
+//	int b = 0;
+//	while (s < 3 && b < 4)
+//	{
+//		printf("ストライク=1 or ボール=2 or ファウル=3 ？");
+//		scanf_s("%d", &count);
+//		if (count == 1)
+//		{
+//			s++;
+//		}
+//		else if (count == 2)
+//		{
+//			b++;
+//		}
+//		else if (count == 3)
+//		{
+//			
+//			if (s == 2) {
+//				s == s;
+//			}
+//			else
+//			{
+//				s++;
+//			}
+//		}
+//	}
+//	printf("%dボール,%dストライク", b, s);
+//}
+//
+//
+
+
+//16
 int main() {
-	int i;
-	int sum = 0;
-	while (sum < 100)
+	int num,i;
+	printf("入力してください\n");
+	scanf_s("%d", &num);
+	for ( i = 2; i < num; i++)
 	{
-		scanf_s("%d", &i);
-		sum = +i;
+		if (num % i == 0)
+		{
+			break;
+		}
+	}if (num == i)
+	{
+		printf("%dは素数です", num);
+	}
+	else
+	{
+		printf("%dは素数ではありません", num);
 	}
 }
 
-
+//17 
 
 
 
