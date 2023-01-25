@@ -367,27 +367,33 @@
 
 
 //16
-int main() {
-	int num,i;
-	printf("“ü—Í‚µ‚Ä‚­‚¾‚³‚¢\n");
-	scanf_s("%d", &num);
-	for ( i = 2; i < num; i++)
-	{
-		if (num % i == 0)
-		{
-			break;
-		}
-	}if (num == i)
-	{
-		printf("%d‚Í‘f”‚Å‚·", num);
-	}
-	else
-	{
-		printf("%d‚Í‘f”‚Å‚Í‚ ‚è‚Ü‚¹‚ñ", num);
-	}
-}
+//int main() {
+//	int num,i;
+//	printf("“ü—Í‚µ‚Ä‚­‚¾‚³‚¢\n");
+//	scanf_s("%d", &num);
+//	for ( i = 2; i < num; i++)
+//	{
+//		if (num % i == 0)
+//		{
+//			break;
+//		}
+//	}if (num == i)
+//	{
+//		printf("%d‚Í‘f”‚Å‚·", num);
+//	}
+//	else
+//	{
+//		printf("%d‚Í‘f”‚Å‚Í‚ ‚è‚Ü‚¹‚ñ", num);
+//	}
+//}
 
 //17 
+int main() {
+	int num1;
+	printf("2ˆÈã‚Ì”’l‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢\n");
+	scanf_s("%d", num1);
+
+}
 
 
 
