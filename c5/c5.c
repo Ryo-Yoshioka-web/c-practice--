@@ -388,14 +388,155 @@
 //}
 
 //17 
+//int main() {
+//	int num1,i;
+//	printf("2ˆÈã‚Ì”’l‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢\n");
+//	scanf_s("%d", &num1);
+//	for ( i = 2; i <= num1; i++)
+//	{
+//		while (num1 % i == 0)
+//		{
+//			printf("%d", i);
+//			num1 /= i;
+//		}
+//	}
+//}
+
+//18
+//int main() {
+//	int i , j;
+//	for (i = 1; i < 10; i++)
+//	{
+//		for (j = 1; j < 10; j++)
+//		{
+//			printf("%2d",i*j);
+//		}
+//		printf("\n");
+//	}
+//}
+
+//19
+//int main() {
+//	int num;
+//	int max = 0;
+//	printf("”š‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢");
+//	scanf_s("%d", &num);
+//	while (!(num == 0))
+//	{
+//		max += num;
+//		scanf_s("%d", &num);
+//	}
+//	printf("%d", max);
+//}
+
+//int main() {
+//	int num ;
+//	int max= 0;
+//	for (; ;)
+//	{
+//		scanf_s("%d", &num);
+//		if (num == 0)
+//		{
+//			break;
+//		}
+//		max += num;
+//	}
+//	printf("%d", max);
+//}
+
+//20
+//int main() {
+//	int num;
+//	int i;
+//	int max = 0;
+//	int ave;
+//
+//	printf("”’l‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢\n");
+//	for ( i = 1; ; i++)
+//		{
+//			scanf_s("%d", &num);
+//				if (num == 0)
+//				{
+//					break;
+//				}
+//				else if (max == 0) {
+//					max += num;
+//				}
+//				max += num;
+//		
+//
+//		}
+//	//printf("%d\n", max);
+//	// printf("%d\n", i-1);
+//	printf("%d\n", max / (i-1));
+//}
+
+
+//21
+//int main() {
+//	int size;
+//	int i,j;
+//	scanf_s("%d", &size);
+//	for ( i = 1; i <= size; i++)
+//	{
+//		for ( j = 1; j <= i; j++)
+//		{
+//			printf("$");
+//		}
+//		printf("\n");
+//	}
+//}
+// 
+
+
+
+
+//22
+//int main() {
+//	int i,j;
+//	int size;
+//	scanf_s("%d", &size);
+//	for ( i = 0; i < size; i++)
+//	{
+//		for (j = 0; j < size; j++)
+//		{
+//			if (i == j || (size - i - 1) == j)
+//				printf("X");
+//			else
+//				printf(" ");
+//		}
+//		printf("\n");
+//	}
+//}
+
+//23
+//int main() {
+//	int num2 = 1;
+//	int i, j;
+//	int sum = 0;
+//	int tem;
+//	for ( i = 0; sum < 1000;)
+//	{
+//		sum == sum + num2;
+//		tem = sum + num2;
+//		num2 = sum;
+//	}
+//}
+
 int main() {
-	int num1;
-	printf("2ˆÈã‚Ì”’l‚ğ“ü—Í‚µ‚Ä‚­‚¾‚³‚¢\n");
-	scanf_s("%d", num1);
+	int     n1 = 0;
+	int     n2 = 1;
+	int     n3 = n1 + n2;
 
+	while (n1 <= 1000)
+	{
+		printf("%d,", n1);
+
+		n1 = n2;
+		n2 = n3;
+		n3 = n1 + n2;
+	}
 }
-
-
 
 
 
