@@ -130,3 +130,36 @@
 //    scanf_s("%d %d", &num1, &num2);
 //    printf("Œ‹‰Ê:%d", kuku[num1-1][num2-1]);
 // }
+
+//6-8
+int main() {
+	int i, j,max;
+	int temp;
+	int num[10];
+
+	for ( i = 0; i < 10; i++)
+	{
+		scanf_s("%d" ,&num[i]);
+	}
+
+	for ( i = 0; i < 10; i++)
+	{
+		max =  i;
+		for ( j = i + 1; j < 10; j++)
+		{
+			
+			if (num[max] < num[j]) {
+				max = j;
+			}
+		}
+		temp = num[i];
+		num[i] = num[max];
+		num[max] = temp;
+	}
+
+	for (i = 0; i < 10; i++)
+	{
+		printf("%d\n", num[i]);
+	}
+
+}
