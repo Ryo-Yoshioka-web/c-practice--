@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 #include <time.h>
 typedef char String[1024];
 
@@ -21,4 +22,41 @@ typedef char String[1024];
 //	scanf_s("%s", &s,1024);
 //	int num = atoi(s) / 3;
 //	printf("選んだ数字は%dと%dと%dですね",num-7,num,num+7);
+//}
+
+//4-4
+//int main(void) {
+//	printf("いただきます\nバナナを食べます\n");
+//	bool more = true;
+//	if (more == true)
+//	{
+//		printf("おかわりをください\n");
+//	}
+//	else
+//	{
+//		printf("お腹がいっぱいです\n");
+//	}
+//	printf("ごちそうさまでした\n");
+//	return 0;
+//}
+
+//4-5
+//int main() {
+//	int num  = 1;
+//	int temp = 30;
+//	
+//	while (num == 1)
+//	{
+//		printf("現在の設定温度:");
+//		printf("%d\n", temp);
+//		printf("暑いですか? Yes=1 No=0\n");
+//		scanf_s("%d", &num);
+//		if (num == 1)
+//		{
+//			temp -= 1;
+//		}
+//		else {
+//			printf("設定を終了します");
+//		}
+//	}
 //}
