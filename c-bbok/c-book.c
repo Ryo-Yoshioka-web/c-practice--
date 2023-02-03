@@ -162,3 +162,59 @@ typedef char String[1024];
 //		printf("正解は%dです", answer);
 //	}
 //}
+
+
+
+// 6-2
+//int main() {
+//	struct BOOK {
+//		String name;
+//		int price;
+//		int date;
+//	};
+//}
+
+//6-3
+//int main() {
+//	struct BOOK {
+//		String name;
+//		int price;
+//		int date;
+//	};
+//
+//	struct BOOK text = {"人生",230,2};
+//	struct BOOK dictionary = { "辞書",320,3 };
+//
+//}
+
+//6-4
+//int main() {
+//	typedef struct  {
+//		String name;
+//		int date;
+//		int price;
+//	} Meisi;
+//}
+
+
+
+int main(void)
+{
+    /* 練習6-5ここから */
+    typedef struct {
+        String title;       // 件名
+        String from;        // 送信元メールアドレス
+        String datetime;    // 受信日時
+        int size;           // サイズ(KB)
+        bool attached;      // 添付ファイルの有無
+        String body;        // 本文
+    } Mail;
+
+    Mail m = { "あけましておめでとう", "sugawara@miyabilink.jp",
+        "2022/01/01 10:10:58", 302, false };
+
+    printf("%sさんから、%sにメールです。サイズは(%d)KB,(%s)。", m.from, m.datetime, m.size, m.attached ? "あり" : "なし");
+    /* 練習6-5ここまで */
+
+    return 0;
+}
