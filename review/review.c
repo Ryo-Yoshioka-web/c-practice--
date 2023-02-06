@@ -248,29 +248,29 @@
 //}
 
 //
-int main() {
-    int values[10];
-    int i, j, t;
-
-    for (i = 0; i < 10; i++)
-        scanf_s("%d", &values[i]);
-
-    for (i = 0; i < 10; i++)
-    {
-        for (j = i + 1; j < 10; j++)
-        {
-            if (values[i] < values[j])
-            {
-                t = values[i];
-                values[i] = values[j];
-                values[j] = t;
-            }
-        }
-    }
-
-    for (i = 0; i < 10; i++)
-        printf("%d ", values[i]);
-}
+//int main() {
+//    int values[10];
+//    int i, j, t;
+//
+//    for (i = 0; i < 10; i++)
+//        scanf_s("%d", &values[i]);
+//
+//    for (i = 0; i < 10; i++)
+//    {
+//        for (j = i + 1; j < 10; j++)
+//        {
+//            if (values[i] < values[j])
+//            {
+//                t = values[i];
+//                values[i] = values[j];
+//                values[j] = t;
+//            }
+//        }
+//    }
+//
+//    for (i = 0; i < 10; i++)
+//        printf("%d ", values[i]);
+//}
 
 
 //int main() {
@@ -303,4 +303,117 @@ int main() {
 //		printf("%d\n", num[i]);
 //	}
 //
+//}
+
+//int main() {
+//	int i, j;
+//	int num[10];
+//	int min ;
+//	int temp;
+//
+//	printf("”Žš‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢\n");
+//	for ( i = 0; i < 10; i++)
+//	{
+//		scanf_s("%d", &num[i]);
+//	}
+//
+//
+//	for ( i = 0; i < 10; i++)
+//	{
+//		min = i;
+//		for ( j = i + 1; j < 10; j++)
+//		{
+//			if (num[min] > num[j])
+//			{
+//				min = j;
+//			}
+//			temp = num[i];
+//			num[i] = num[min];
+//			num[min] = temp;
+// 
+//		}
+//	}
+//
+//	for ( i = 0; i < 10; i++)
+//	{
+//		printf("%d ", num[i]);
+//	}
+//}
+
+
+//int main() {
+//	int i, j;
+//	int num[10];
+//	int temp;
+//
+//	printf("”Žš‚ð“ü—Í‚µ‚Ä‚­‚¾‚³‚¢\n");
+//	for (i = 0; i < 10; i++)
+//	{
+//		scanf_s("%d", &num[i]);
+//	}
+//
+//
+//	for (i = 0; i < 10; i++)
+//	{
+//		for (j = i + 1; j < 10; j++)
+//		{
+//			if (num[i] > num[j])
+//			{
+//				temp = num[i];
+//				num[i] = num[j];
+//				num[j] = temp;
+//			}
+//		
+//
+//		}
+//	}
+//
+//	for (i = 0; i < 10; i++)
+//	{
+//		printf("%d ", num[i]);
+//	}
+//}
+
+//int main() {
+//	int binary[16];
+//	int value;
+//	int i;
+//
+//	scanf_s("%d", &value);
+//
+//	// ”z—ñ binary‚É0‚©1‚ð‘ã“ü‚·‚é
+//	for ( i = 15; i >= 0; i++)
+//	{
+//		binary[i] = value % 2;
+//		value /= 2;
+//	}
+//
+//
+//	for (i = 0; i < 16; i++)
+//		printf("%d", binary[i]);
+//}
+
+//int main() {
+//    int kuku[9][9];
+//    int i, j;
+//
+//    // ”z—ñ kuku ‚É’l‚ð‘ã“ü‚·‚é
+//
+//    for ( i = 0; i < 9; i++)
+//    {
+//        for ( j = 0; j <9; j++)
+//        {
+//            kuku[i][j] = (i + 1) * (j + 1);
+//        }
+//    }
+//
+//
+//
+//    for (i = 0; i < 9; i++)
+//    {
+//        for (j = 0; j < 9; j++)
+//            printf(" %2d", kuku[i][j]);
+//
+//        printf("\n");
+//    }
 //}
