@@ -198,23 +198,103 @@ typedef char String[1024];
 
 
 
-int main(void)
-{
-    /* 練習6-5ここから */
-    typedef struct {
-        String title;       // 件名
-        String from;        // 送信元メールアドレス
-        String datetime;    // 受信日時
-        int size;           // サイズ(KB)
-        bool attached;      // 添付ファイルの有無
-        String body;        // 本文
-    } Mail;
+//int main(void)
+//{
+//    /* 練習6-5ここから */
+//    typedef struct {
+//        String title;       // 件名
+//        String from;        // 送信元メールアドレス
+//        String datetime;    // 受信日時
+//        int size;           // サイズ(KB)
+//        bool attached;      // 添付ファイルの有無
+//        String body;        // 本文
+//    } Mail;
+//
+//    Mail m = { "あけましておめでとう", "sugawara@miyabilink.jp",
+//        "2022/01/01 10:10:58", 302, false };
+//
+//    printf("%sさんから、%sにメールです。サイズは(%d)KB,(%s)。", m.from, m.datetime, m.size, m.attached ? "あり" : "なし");
+//    /* 練習6-5ここまで */
+//
+//    return 0;
+//}
 
-    Mail m = { "あけましておめでとう", "sugawara@miyabilink.jp",
-        "2022/01/01 10:10:58", 302, false };
 
-    printf("%sさんから、%sにメールです。サイズは(%d)KB,(%s)。", m.from, m.datetime, m.size, m.attached ? "あり" : "なし");
-    /* 練習6-5ここまで */
+//int scores[5] = { 0 };
+//char primary[] = { 'R','G','B'};
+//double ave[30];
+//int table[9][9];
 
-    return 0;
-}
+// 7-2
+//int main() {
+//	int scores[5] = { 88,61,90,75,93 };
+//	int i;
+//	int max = scores[0];
+//	int min = scores[0];
+//	double ary = 0;
+//	int num = 0;
+//
+//	for ( i = 0; i < 5; i++)
+//	{
+//		if (max < scores[i])
+//		{
+//			max = scores[i];
+//		}
+//		if ( min > scores[i])
+//		{
+//			min = scores[i];
+//		}
+//	}
+//
+//	printf("%d\n", max);
+//	printf("%d\n", min);
+//
+//	for ( i = 0; i < 5; i++)
+//	{
+//		ary += scores[i];
+//		num++;
+//	}
+//	printf("%2f\n", ary / num );
+//}
+
+//int main() {
+//	int i;
+//	typedef struct {
+//		int code;
+//		char character;
+//	} Ascii;
+//
+//	Ascii characters[26];
+//
+//	for ( i = 0; i < 26; i++)
+//	{
+//		characters[i].code = i + 65;
+//		characters[i].character = i + 65;
+//		printf("%d\n%c\n", characters[i].code,characters[i].character);
+//	}
+//}
+
+//int main() {
+//	int answer[3];
+//	int i;
+//	int input[3];
+//
+//	srand((unsigned)time(NULL));
+//	printf("***数当てゲーム(レベル2)***\n3桁の数を当ててください\nただし各桁の数字は重複しません\n");
+//	for ( i = 0; i < 3; i++)
+//	{
+//		answer[i] = rand() % 10;
+//	}
+//
+//	for (i = 0; i < 3; i++)
+//	{
+//		printf("%d桁目の予想を0～9で入力してください:", i + 1);
+//		scanf_s("%d\n", &input[i]);
+//	}
+//
+//	
+//		if (answer[i] == input[i]) {
+//
+//		}
+//
+//}
